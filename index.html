@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Updated title to StayEase -->
+    <title>StayEase - Find Your Perfect PG</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <!-- Updated logo to StayEase with icon -->
+            <a href="index.html" class="logo">
+                <span class="logo-icon">🏠</span>
+                <span class="logo-text">StayEase</span>
+            </a>
+            <div class="nav-links">
+                <a href="index.html" class="nav-link active">Home</a>
+                <a href="listings.html" class="nav-link">Browse PGs</a>
+                <a href="owner-dashboard.html" class="nav-link">For Owners</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Find Your Perfect PG</h1>
+            <p>Discover verified paying guest accommodations for students and professionals</p>
+            
+            <div class="search-card">
+                <input type="text" placeholder="Search location..." id="location-input">
+                <select id="room-type">
+                    <option>Room Type</option>
+                    <option>Single</option>
+                    <option>Double</option>
+                    <option>Triple</option>
+                </select>
+                <button class="btn-search" onclick="searchPGs()">Search</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured PGs -->
+    <section class="featured-section">
+        <div class="container">
+            <h2>Featured Properties</h2>
+
+            <div class="property-grid">
+                <div class="property-card" onclick="location.href='property-detail.html'">
+                    <div class="property-image">
+                        <img src="1.jpg" alt="PG Room">
+                    </div>
+                    <div class="property-info">
+                        <h3>Lakshmi PG for Girls</h3>
+                        <p class="property-location">Koramangala, Bangalore</p>
+                        <div class="property-footer">
+                            <span class="price">₹8,500/mo</span>
+                            <span class="availability">Available</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="property-card" onclick="location.href='property-detail.html'">
+                    <div class="property-image">
+                        <img src="paying-guest-renting-solutions.jpg" alt="Hostel">
+                    </div>
+                    <div class="property-info">
+                        <h3>Elite Boys Hostel</h3>
+                        <p class="property-location">Powai, Mumbai</p>
+                        <div class="property-footer">
+                            <span class="price">₹12,000/mo</span>
+                            <span class="availability">Available</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="property-card" onclick="location.href='property-detail.html'">
+                    <div class="property-image">
+                        <img src="paying-guest.jpg"alt="Student PG">
+                    </div>
+                    <div class="property-info">
+                        <h3>Student Haven PG</h3>
+                        <p class="property-location">Kota, Rajasthan</p>
+                        <div class="property-footer">
+                            <span class="price">₹6,000/mo</span>
+                            <span class="availability">Available</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features-section">
+        <div class="container">
+            <h2>Why Choose Us</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <h3>Verified Properties</h3>
+                    <p>All listings are verified for quality and safety</p>
+                </div>
+
+                <div class="feature-card">
+                    <h3>Easy Management</h3>
+                    <p>Simple tools for owners to manage tenants and payments</p>
+                </div>
+
+                <div class="feature-card">
+                    <h3>Quick Booking</h3>
+                    <p>Find and book your perfect PG in minutes</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <!-- Updated copyright to StayEase -->
+                <p>&copy; 2025 StayEase. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="#">About</a>
+                    <a href="#">Contact</a>
+                    <a href="#">Privacy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

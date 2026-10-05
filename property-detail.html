@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Property Details - StayEase</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <span class="logo-icon">🏠</span>
+                <span class="logo-text">StayEase</span>
+            </a>
+            <div class="nav-links">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="listings.html" class="nav-link">Browse PGs</a>
+                <a href="owner-dashboard.html" class="nav-link">For Owners</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Enhanced property detail page with image gallery, better layout, reviews, and contact info -->
+    <section class="property-detail-page">
+        <div class="container">
+            <button class="back-btn" onclick="history.back()">← Back to Listings</button>
+
+            <!-- Image Gallery -->
+            <div class="image-gallery">
+                <div class="main-image-container">
+                    <img id="mainImage" src="/placeholder.svg?height=500&width=800" alt="Main Property Image" class="main-image">
+                </div>
+                <div class="thumbnail-gallery">
+                    <img src="/placeholder.svg?height=120&width=150" alt="Bedroom" class="thumbnail active" onclick="changeMainImage(this)">
+                    <img src="/placeholder.svg?height=120&width=150" alt="Kitchen" class="thumbnail" onclick="changeMainImage(this)">
+                    <img src="/placeholder.svg?height=120&width=150" alt="Bathroom" class="thumbnail" onclick="changeMainImage(this)">
+                    <img src="/placeholder.svg?height=120&width=150" alt="Common Area" class="thumbnail" onclick="changeMainImage(this)">
+                </div>
+            </div>
+
+            <div class="property-detail-layout">
+                <div class="detail-main">
+                    <!-- Title and Basic Info -->
+                    <div class="property-header">
+                        <div>
+                            <h1>Lakshmi PG for Girls</h1>
+                            <p class="detail-location">📍 Koramangala 5th Block, Bangalore</p>
+                            <div class="property-tags">
+                                <span class="tag">Girls Only</span>
+                                <span class="tag">Verified</span>
+                                <span class="tag">WiFi</span>
+                            </div>
+                        </div>
+                        <div class="rating-section">
+                            <div class="rating">⭐ 4.5</div>
+                            <p class="review-count">24 reviews</p>
+                        </div>
+                    </div>
+
+                    <!-- About Section -->
+                    <div class="detail-section">
+                        <h2>About This Property</h2>
+                        <p>Safe and comfortable accommodation for working women and students in the heart of Koramangala. The property features spacious rooms with modern amenities and a homely atmosphere. Located close to major IT parks, shopping centers, and educational institutions.</p>
+                    </div>
+
+                    <!-- Room Options -->
+                    <div class="detail-section">
+                        <h2>Room Options Available</h2>
+                        <div class="room-options">
+                            <div class="room-option-card">
+                                <h4>Single Occupancy</h4>
+                                <p class="room-price">₹10,500/month</p>
+                                <ul class="room-features">
+                                    <li>Private room with attached bathroom</li>
+                                    <li>AC available</li>
+                                    <li>Work desk and wardrobe</li>
+                                </ul>
+                            </div>
+                            <div class="room-option-card active-option">
+                                <h4>Double Sharing</h4>
+                                <p class="room-price">₹8,500/month</p>
+                                <ul class="room-features">
+                                    <li>Shared room with 2 beds</li>
+                                    <li>Common bathroom</li>
+                                    <li>Study table included</li>
+                                </ul>
+                            </div>
+                            <div class="room-option-card">
+                                <h4>Triple Sharing</h4>
+                                <p class="room-price">₹6,500/month</p>
+                                <ul class="room-features">
+                                    <li>Shared room with 3 beds</li>
+                                    <li>Common bathroom</li>
+                                    <li>Budget-friendly option</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Amenities Section -->
+                    <div class="detail-section">
+                        <h2>Amenities & Facilities</h2>
+                        <div class="amenities-grid-enhanced">
+                            <div class="amenity-item-enhanced">
+                                <span class="amenity-icon">📶</span>
+                                <span>High Speed WiFi</span>
+                            </div>
+                            <div class="amenity-item-enhanced">
+                                <span class="amenity-icon">🍽️</span>
+                                <span>3 Meals Included</span>
+                            </div>
+                            <div class="amenity-item-enhanced">
+                                <span class="amenity-icon">🧹</span>
+                                <span>Daily Housekeeping</span>
+                            </div>
+                            <div class="amenity-item-enhanced">
+                                <span class="amenity-icon">🔒</span>
+                                <span>24/7 Security</span>
+                            </div>
+                            <div class="amenity-item-enhanced">
+                                <span class="amenity-icon">👔</span>
+                                <span>Laundry Service</span>
+                            </div>
+                            <div class="amenity-item-enhanced">
+                                <span class="amenity-icon">⚡</span>
+                                <span>Power Backup</span>
+                            </div>
+                            <div class="amenity-item-enhanced">
+                                <span class="amenity-icon">🅿️</span>
+                                <span>Parking Available</span>
+                            </div>
+                            <div class="amenity-item-enhanced">
+                                <span class="amenity-icon">❄️</span>
+                                <span>AC Rooms</span>
+                            </div>
+                        </div>
+                    </div>
+
+                  
+
+                    <!-- Reviews Section -->
+                    <div class="detail-section">
+                        <h2>Tenant Reviews</h2>
+                        <div class="reviews-container">
+                            <div class="review-card">
+                                <div class="review-header">
+                                    <div>
+                                        <h4>Priya Sharma</h4>
+                                        <p class="review-date">2 months ago</p>
+                                    </div>
+                                    <div class="review-rating">⭐⭐⭐⭐⭐</div>
+                                </div>
+                                <p class="review-text">"Excellent PG with great food and friendly owner. Very safe and clean environment. Highly recommended for working women!"</p>
+                            </div>
+
+                            <div class="review-card">
+                                <div class="review-header">
+                                    <div>
+                                        <h4>Anjali Kumar</h4>
+                                        <p class="review-date">4 months ago</p>
+                                    </div>
+                                    <div class="review-rating">⭐⭐⭐⭐</div>
+                                </div>
+                                <p class="review-text">"Good accommodation with all basic amenities. The location is perfect for IT professionals. Food quality is decent."</p>
+                            </div>
+
+                            <div class="review-card">
+                                <div class="review-header">
+                                    <div>
+                                        <h4>Sneha Reddy</h4>
+                                        <p class="review-date">6 months ago</p>
+                                    </div>
+                                    <div class="review-rating">⭐⭐⭐⭐⭐</div>
+                                </div>
+                                <p class="review-text">"Staying here for 8 months now. Very homely atmosphere and the aunty is very caring. Rooms are spacious and well-maintained."</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Booking Sidebar -->
+                <aside class="booking-sidebar-enhanced">
+                    <div class="booking-card-sticky">
+                        <div class="price-display-large">
+                            <span class="price-amount">₹8,500</span>
+                            <span class="price-period">/month</span>
+                        </div>
+                        <p class="price-note">+ ₹8,500 security deposit (refundable)</p>
+
+                        <div class="booking-form-enhanced">
+                            <label>Select Room Type</label>
+                            <select class="form-input">
+                                <option>Double Sharing - ₹8,500</option>
+                                <option>Single Room - ₹10,500</option>
+                                <option>Triple Sharing - ₹6,500</option>
+                            </select>
+
+                            <label>Move-in Date</label>
+                            <input type="date" class="form-input">
+
+                            <label>Stay Duration</label>
+                            <select class="form-input">
+                                <option>3 Months</option>
+                                <option>6 Months</option>
+                                <option>12 Months</option>
+                            </select>
+
+                            <button class="btn-book-now">Book Now</button>
+                            <button class="btn-schedule-visit">Schedule Visit</button>
+                        </div>
+
+                        <div class="owner-contact">
+                            <h4>Contact Owner</h4>
+                            <p class="owner-name">Mrs. Lakshmi Devi</p>
+                            <p class="owner-phone">📞 +91 98765 43210</p>
+                            <button class="btn-contact">Send Message</button>
+                        </div>
+
+                        <div class="safety-badge">
+                            <p>🛡️ <strong>Verified Property</strong></p>
+                            <p class="safety-text">This property has been verified by StayEase team</p>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2025 StayEase. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="#">About</a>
+                    <a href="#">Contact</a>
+                    <a href="#">Privacy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

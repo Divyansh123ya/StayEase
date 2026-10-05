@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Updated title to StayEase -->
+    <title>Browse PG Accommodations - StayEase</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <!-- Updated logo to StayEase with icon -->
+            <a href="index.html" class="logo">
+                <span class="logo-icon">🏠</span>
+                <span class="logo-text">StayEase</span>
+            </a>
+            <div class="nav-links">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="listings.html" class="nav-link active">Browse PGs</a>
+                <a href="owner-dashboard.html" class="nav-link">For Owners</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Listings Page -->
+    <section class="listings-page">
+        <div class="container">
+            <h1>Browse PG Listings</h1>
+
+            <div class="listings-layout">
+                <!-- Filters Sidebar -->
+                <aside class="filters-sidebar">
+                    <h3>Filters</h3>
+                    
+                    <div class="filter-group">
+                        <label>Location</label>
+                        <input type="text" placeholder="Enter city">
+                    </div>
+
+                    <div class="filter-group">
+                        <label>Price Range</label>
+                        <input type="number" placeholder="Min">
+                        <input type="number" placeholder="Max">
+                    </div>
+
+                    <div class="filter-group">
+                        <label>Room Type</label>
+                        <label><input type="checkbox"> Single</label>
+                        <label><input type="checkbox"> Double</label>
+                        <label><input type="checkbox"> Triple</label>
+                    </div>
+
+                    <button class="btn-primary">Apply</button>
+                </aside>
+
+                <!-- Listings Grid -->
+                <div class="listings-main">
+                    <!-- Reduced property count from 6 to 3 -->
+                    <p class="results-count">Showing 3 properties</p>
+
+                    <div class="property-grid">
+                        <div class="property-card" onclick="location.href='property-detail.html'">
+                            <div class="property-image">
+                                <img src="1.jpg" alt="Property">
+                            </div>
+                            <div class="property-info">
+                                <h3>Lakshmi PG</h3>
+                                <p class="property-location">Koramangala, Bangalore</p>
+                                <div class="property-footer">
+                                    <span class="price">₹8,500/mo</span>
+                                    <span class="availability">Available</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="property-card" onclick="location.href='property-detail.html'">
+                            <div class="property-image">
+                                <img src="paying-guest-renting-solutions.jpg" alt="Property">
+                            </div>
+                            <div class="property-info">
+                                <h3>Elite Boys Hostel</h3>
+                                <p class="property-location">Powai, Mumbai</p>
+                                <div class="property-footer">
+                                    <span class="price">₹12,000/mo</span>
+                                    <span class="availability">Available</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="property-card" onclick="location.href='property-detail.html'">
+                            <div class="property-image">
+                                <img src="paying-guest.jpg" alt="Property">
+                            </div>
+                            <div class="property-info">
+                                <h3>Student Haven</h3>
+                                <p class="property-location">Kota, Rajasthan</p>
+                                <div class="property-footer">
+                                    <span class="price">₹6,000/mo</span>
+                                    <span class="availability">Available</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <!-- Updated copyright to StayEase -->
+                <p>&copy; 2025 StayEase. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="#">About</a>
+                    <a href="#">Contact</a>
+                    <a href="#">Privacy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
